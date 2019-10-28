@@ -107,6 +107,6 @@
 
 + (UIImage *)jsq_shareActionImage
 {
-    return [UIImage jsq_bubbleImageFromBundleWithName:@"share"];
+    return [UIImage jsq_bubbleImageFromBundleWithName:@"error"];
 }
 @end

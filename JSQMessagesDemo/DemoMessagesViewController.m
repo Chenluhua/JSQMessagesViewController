@@ -578,7 +578,7 @@
     }
 
     cell.accessoryButton.hidden = ![self shouldShowAccessoryButtonForMessage:msg];
-    
+    //[cell.accessoryActivityIndicator startAnimating];
     return cell;
 }
 

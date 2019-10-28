@@ -169,6 +169,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic, readonly, nullable) UIButton *accessoryButton;
 
 /**
+ *  Returns the accessory activity indicator view of the cell.
+ */
+@property (weak, nonatomic, readonly, nullable) UIActivityIndicatorView *accessoryActivityIndicator;
+
+/**
  *  The media view of the cell. This view displays the contents of a media message.
  *
  *  @warning If this value is non-nil, then textView and messageBubbleImageView will both be `nil`.

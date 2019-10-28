@@ -43,6 +43,7 @@ static NSMutableSet *jsqMessagesCollectionViewCellActions = nil;
 @property (weak, nonatomic) IBOutlet UIView *avatarContainerView;
 
 @property (weak, nonatomic) IBOutlet UIButton *accessoryButton;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *accessoryActivityIndicator;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *messageBubbleContainerWidthConstraint;
 
@@ -146,7 +147,7 @@ static NSMutableSet *jsqMessagesCollectionViewCellActions = nil;
 
 - (void)configureAccessoryButton
 {
-    UIColor *tintColor = [UIColor lightGrayColor];
+    UIColor *tintColor = [UIColor redColor];
     UIImage *shareActionImage = [[UIImage jsq_shareActionImage] jsq_imageMaskedWithColor:tintColor];
     [self.accessoryButton setImage:shareActionImage forState:UIControlStateNormal];
 }
